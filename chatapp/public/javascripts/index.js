@@ -7,9 +7,9 @@ function enter() {
     // ユーザ名が未入力でないかチェックする
     const first = userName.slice(0,1);
 
-    if(userName === ''||first === ' '||first ==='　')//一文字目が空欄の場合を弾く
+    if(userName.trim() === '')//一文字目が空欄の場合を弾く
     {
-      alert('名前が空欄です。\n名前を入力してください。');
+      alert('名前が空欄です。\n再度入力してください。');
     }
     else
     {
