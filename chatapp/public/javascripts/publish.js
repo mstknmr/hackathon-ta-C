@@ -7,7 +7,7 @@ function publish() {
     // 入力されたメッセージを取得
     const message =$('#message').val();
     // 投稿メッセージをサーバに送信する
-    socket.emit('event1', $('#userName').val()+$('#message').val() );
+    socket.emit('event1', $('#userName').val()+':'+$('#message').val() );
     // 投稿内容を送信
     //return false;
 
