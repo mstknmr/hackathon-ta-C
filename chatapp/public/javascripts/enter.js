@@ -1,10 +1,10 @@
 'use strict';
 
-console.log('入室メッセージがみれるはず');
+
 // 入力されたユーザ名を取得する
-const userName = $('userName1').val();
+const userName = $('#userName').val();
 // 入室メッセージをサーバに送信する
-io.socket.emit('enter1',userName +'さんが入室しました');
+socket.emit('enter1',userName +'さんが入室しました。');
 
 
 
