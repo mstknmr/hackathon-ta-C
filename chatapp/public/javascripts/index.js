@@ -6,9 +6,11 @@ function pressEnter(){
     if(e.which === 13)
       {
         console.log('pressenter');
-        $('#userName_button').enter();
+        $('#userName_button').enterroom();
 
       }
+    else
+    {}
   });
 
         /*if(userName.trim() === '')//userNameが空欄の場合を弾く
@@ -25,14 +27,14 @@ function pressEnter(){
 }
 
 // チャットルームに入室する
-function enter() {
+function enterroom() {
     // 入力されたユーザ名を取得する
-    const userName =$('#userName').val();
+    const userName1 =$('#userName').val();
     console.log('enter');
     // ユーザ名が未入力でないかチェックする
     //テキストボックス内においてエンターキーで名前なしでログインできる問題の対処
 
-    if(userName.trim() === '')//userNameが空欄の場合を弾く
+    if(userName1.trim() === '')//userNameが空欄の場合を弾く
       {
         console.log('alert');
         alert('名前が空欄です。\n再度入力してください。');
@@ -40,7 +42,7 @@ function enter() {
       }
     else
       {
-        console.log(submit);
+        console.log('submit');
         $('form').submit();
 
       }
