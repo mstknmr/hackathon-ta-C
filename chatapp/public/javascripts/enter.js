@@ -1,15 +1,13 @@
 'use strict';
 
 
-socket.on('event1',function(data){
-  if(!data){
-    return;
-  }
-}
+function enter(){
+console.log('入室メッセージがみれるはず');
 // 入力されたユーザ名を取得する
 const userName = $('userName').val();
 // 入室メッセージをサーバに送信する
-socket.emit('event1',userName +'さんが入室しました');
+io.socket.emit('event1',userName +'さんが入室しました');
+}
 
 
 
