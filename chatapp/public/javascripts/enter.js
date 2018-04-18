@@ -7,8 +7,6 @@ const userName = $('#userName').val();
 socket.emit('enter1',userName +'さんが入室しました。');
 
 
-
-
 // サーバから受信した入室メッセージを画面上に表示する
 socket.on('enter2', function (data) {
     $('#thread').prepend('<p>'+ data + '</p>');
