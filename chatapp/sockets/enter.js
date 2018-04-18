@@ -7,6 +7,5 @@ module.exports = function (socket) {
         return;
       }
     socket.broadcast.emit('enter2',data);
-  }
-);
-};
+  });
+}
