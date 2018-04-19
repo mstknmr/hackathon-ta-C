@@ -1,7 +1,7 @@
 'use strict';
 var i=0;
 
-function pressEnter(){
+
   $('#userName').keypress(function(e)
   {
     i++;
@@ -11,15 +11,9 @@ function pressEnter(){
         enterroom();
         return false;
       }
-    else
-      {
-        return false;
-      }
 
-    return false;
   });
 
-}
 
 // チャットルームに入室する
 function enterroom() {
