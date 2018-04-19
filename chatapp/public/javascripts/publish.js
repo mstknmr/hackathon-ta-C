@@ -7,8 +7,15 @@ function publish() {
     // 入力されたメッセージを取得
     const message =$('#message').val();
     // 投稿メッセージをサーバに送信する
-    socket.emit('event1', $('#userName').val()+'さん:'+$('#message').val() );
+    if(message.trim() !== '')//空メッセージでの送信防止
+    {
+      socket.emit('event1', userName+'さん:'+message);
     // 投稿内容を送信
+    }
+
+    else {
+      alert('メッセージが空欄です。');
+    }
     //return false;
 
 
