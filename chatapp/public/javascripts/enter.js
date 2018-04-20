@@ -5,10 +5,13 @@
 const userName = $('#userName').val();
 // 入室メッセージをサーバに送信する
 socket.emit('enter1',userName +'さんが入室しました。');
-
-
+//socket.emit('ss_addroomlist',userName);
 // サーバから受信した入室メッセージを画面上に表示する
 socket.on('enter2', function (data) {
     $('#thread').prepend('<p>'+ data + '</p>');
     $('#thread').addClass('enter_color');
 });
+/*
+socket.on('sc_addroomlist',function(data){
+    $('#roomlist').prepend(data);
+});*/

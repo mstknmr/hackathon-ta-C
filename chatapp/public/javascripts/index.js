@@ -1,13 +1,11 @@
 'use strict';
-var i=0;
 
 
   $('#userName').keypress(function(e)
   {
-    i++;
     if(e.which === 13)
       {
-        console.log('enter'+i);
+        console.log("enter");
         enterroom();
         return false;
       }
@@ -23,7 +21,7 @@ const userName1 =$('#userName').val();
     //テキストボックス内においてエンターキーで名前なしでログインできる問題の対処
     if(userName1.trim() === '')//userNameが空欄の場合を弾く
       {
-        alert('名前が空欄です。\n再度入力してください。'+i);
+        alert('名前が空欄です。\n再度入力してください。');
         return false;
       }
     else
