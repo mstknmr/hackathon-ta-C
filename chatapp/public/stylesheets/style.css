@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    color: #00B7FF;
+    color: 
 }
 
 div.center {
@@ -30,6 +30,7 @@ div.center {
  * トップ画面（index.hbs）に関する設定
  */
   #index {
+    text-align: center;
     background-color: #33FF33;
   }
 
@@ -38,7 +39,7 @@ div.center {
 }
 
 .index-user_name_text {
-    width: 200px;
+    width: 500px;
 }
 
 .index-enter {
@@ -46,7 +47,9 @@ div.center {
 }
 
 .index-enter_button {
-
+width: 500px;
+color: #33FF33;
+background-color: #000000;
 }
 
 /*
@@ -61,7 +64,7 @@ div.center {
  }
 
 .room-message {
-
+  color:#33FF33;
 }
 
 .room-message_textarea {
@@ -73,11 +76,12 @@ div.center {
 }
 
 .room-publish_button {
-
+background-color: #33FF33;
+width: 250px;
 }
 
 .room-memo_button {
-
+  width: 250px;
 }
 
 .room-thread {
@@ -89,9 +93,5 @@ div.center {
 }
 
 .room-exit_button {
-
-}
-
-.enter_color {
-  color: #9ACD32;
+  background-color: #33FF33;
 }
