@@ -3,12 +3,14 @@
 
 // 入力されたユーザ名を取得する
 const userName = $('#userName').val();
+console.log('flug1');
 // 入室メッセージをサーバに送信する
 socket.emit('enter1',userName +'さんが入室しました。');
-//socket.emit('ss_addroomlist',userName);
+
 // サーバから受信した入室メッセージを画面上に表示する
 socket.on('enter2', function (data) {
-    $('#thread').prepend('<p>'+ data + '</p>');
+  console.log('flug3s');
+    $('#thread').prepend('<font color="#ffffff"><p>'+ data + '</p></font>');
     $('#thread').addClass('enter_color');
 });
 /*
