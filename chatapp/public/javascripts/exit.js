@@ -4,8 +4,9 @@
 function exit() {
     // ユーザ名取得
     const userName = $('#userName').val();
+    console.log("testtest....."+userName);
     // 退室メッセージイベントを送信する
-    socket.emit('exit1', userName + 'さんが退出しました。')
+    socket.emit('exit1', userName + 'さんが退出しました。');
     // 退室
     location.href = '/';
 }

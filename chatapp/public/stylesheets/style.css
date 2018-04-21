@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    color: 
+    color:
 }
 
 div.center {
@@ -19,10 +19,12 @@ div.center {
 }
 
 
+
 /*
  * ボタンの共通設定
  */
 .common-button {
+
 
 }
 
@@ -32,10 +34,20 @@ div.center {
   #index {
     text-align: center;
     background-color: #33FF33;
+
   }
 
 .index-user_name {
 
+}
+
+.title-design{
+  color: #fff;
+    font-size: 50px;
+    position: relative;
+    padding: 8px 24px 8px 24px;
+    border-radius: 50px 0;
+    background: #d14;
 }
 
 .index-user_name_text {
