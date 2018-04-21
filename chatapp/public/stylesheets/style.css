@@ -2,20 +2,22 @@
  * 画面全体に関する設定
  */
 body {
-    font: 14px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
+    font: 12px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
+
 }
 
 a {
     color: #00B7FF;
 }
 
-div {
-    margin: 20px 0px;
+div.center {
+    margin: 0 auto;
 }
 
 .row {
     margin: 20px;
 }
+
 
 /*
  * ボタンの共通設定
@@ -27,6 +29,10 @@ div {
 /*
  * トップ画面（index.hbs）に関する設定
  */
+  #index {
+    background-color: #33FF33;
+  }
+
 .index-user_name {
 
 }
@@ -46,6 +52,10 @@ div {
 /*
  * チャットルーム画面（room.hbs）に関する設定
  */
+#room{
+  background-color:#000000 ;
+}
+
 .room-login_user {
 
  }
