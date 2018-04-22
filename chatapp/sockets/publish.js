@@ -7,6 +7,7 @@ module.exports = function (socket, io) {
         return;
       }
 
+
       console.log('クライアントの入力値：' +data);
 
       io.sockets.emit('event2', data);

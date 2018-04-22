@@ -46,8 +46,8 @@ socket.on('event2', function (data) {
     var hour = today.getHours();
     var minute = today.getMinutes();
     var second = today.getSeconds();
-
     $('#thread').prepend('<font color="#ffffff"><p>' + data +'<br />'+year + "/" + month + "/"+ date + "/" + getstringday(day)+'/'+hour+':'+minute+':'+second+ '</p>');
+    $('#message').val('');
 });
 
 function getstringday(day)

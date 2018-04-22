@@ -1,6 +1,5 @@
 'use strict';
 
-
   $('#userName').keypress(function(e)
   {
     if(e.which === 13)
@@ -11,7 +10,6 @@
       }
 
   });
-
 
 // チャットルームに入室する
 function enterroom() {
