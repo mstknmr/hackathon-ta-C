@@ -3,6 +3,7 @@
  */
 body {
     font: 12px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
+    height: 100%;
 
 }
 
@@ -14,9 +15,7 @@ div.center {
     margin: 0 auto;
 }
 
-.row {
-    margin: 20px;
-}
+
 
 
 
@@ -24,34 +23,59 @@ div.center {
  * ボタンの共通設定
  */
 .common-button {
-
-
+  color:White;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+  padding:8px 0 10px;
+  color:#fff;
+  background-color:#618e34;
 }
 
 /*
  * トップ画面（index.hbs）に関する設定
  */
+
   #index {
     text-align: center;
-    background-color: #33FF33;
+    background-image: linear-gradient( -45deg, #242424 25%, #444444 25%, #444444 50%, #242424 50%, #242424 75%, #444444 75%, #444444 );
+    background-size: 30px 30px;
+    width:100%;
+    height: 100%;
+  }
 
+  html,body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    background-color: #a7d28d;
+    width: 90%;
+    height: 100%;
+    min-height: 100%;
   }
 
 .index-user_name {
-
+  font-size :2vw;
 }
 
 .title-design{
   color: #fff;
-    font-size: 50px;
+    font-size: 10vw;
     position: relative;
-    padding: 8px 24px 8px 24px;
-    border-radius: 50px 0;
-    background: #d14;
+    padding: 2% 10% 2% 10%;
+    margin:10% 20% 10% 20%;
+    border-radius: 10vw 0;
+    background: #618e34;
 }
 
 .index-user_name_text {
-    width: 500px;
+  width :100%;
+  height: 100%;
+  font-size: 2vw;
+
 }
 
 .index-enter {
@@ -59,9 +83,18 @@ div.center {
 }
 
 .index-enter_button {
-width: 500px;
-color: #33FF33;
-background-color: #000000;
+width :100%;
+font-size: 2vw;
+border-radius:2vw;
+}
+.row1{
+  height: 60%;
+}
+.row2{
+  height: auto;
+  display: flex;
+  justify-content: center;
+
 }
 
 /*
