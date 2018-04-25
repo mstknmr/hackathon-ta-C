@@ -52,6 +52,7 @@ socket.on('sc_publishMessage', function (data) {
     var clientmessage =data.slice(data.indexOf(':')+1)
     if(clientName === userName)
     {
+      
       $('#thread').prepend('<font color="#ef857d"><p>' + clientName +':<br />'+clientmessage+"<br />"+year + "/" + month + "/"+ date + "/" + getstringday(day)+'/'+hour+':'+minute+':'+second+ '</p>');
       $('#message').val('');
     }
