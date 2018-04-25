@@ -2,14 +2,14 @@
 
 module.exports = function (socket, io) {
     // 投稿メッセージを送信する
-    socket.on('event1', function (data) {
+    socket.on('ss_publishMessage', function (data) {
       if(!data){
         return;
       }
+      console.log('クライアントmessage：' +data);
+      console.log('index'+data.indexOf(':'));
 
-
-      console.log('クライアントの入力値：' +data);
-
-      io.sockets.emit('event2', data);
+      io.sockets.emit('sc_publishMessage', data);
     });
+
 };

@@ -3,7 +3,6 @@
 module.exports = function (socket) {
     // 入室メッセージをクライアントに送信する
     socket.on('enter1',function(data){
-      console.log("flug");
      if(!data)
      {
         return;

@@ -1,9 +1,10 @@
-<div class="container">
-    <div class="row">
-        <h1 class="title-design">Node Chat </h1>
-        <body id="room">
+<body id="room">
+<div class="container2">
+    <div class="row3">
+        <h1 class="title-design roomtitle">Node Chat </h1>
+
     </div>
-    <div class="row">
+    <div class="row4">
         <form method="post" action="/">
             <div class="room-login_user">
                 ログインユーザ：{{userName}}さん
@@ -16,11 +17,11 @@
                 <input type="button" value="投稿" class="common-button room-publish_button" onclick="publish();">
                 <input type="button" value="メモ" class="common-button room-memo_button" onclick="memo();">
             </div>
-            <div class="room-thread">
-                <div id="thread"></div>
-            </div>
             <div class="room-exit">
                 <input type="button" value="退室する" class="common-button room-exit_button" onclick="exit();">
+            </div>
+            <div class="room-thread">
+                <div id="thread"></div>
             </div>
             <div class="room-list">
               <div id="roomlist"></div>

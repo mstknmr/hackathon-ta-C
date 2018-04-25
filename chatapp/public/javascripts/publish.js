@@ -24,7 +24,8 @@ function publish() {
     if(message.trim() !== '')//空メッセージでの送信防止
     {
       const kaigyou =message.replace(/\r?\n/g,"<br />");
-      socket.emit('event1', userName+'さん:'+'<br />'+kaigyou);
+      socket.emit('ss_publishMessage', userName+":"+message);
+
     // 投稿内容を送信
     }
 
@@ -37,7 +38,8 @@ function publish() {
 }
 
 // サーバから受信した投稿メッセージを画面上に表示する
-socket.on('event2', function (data) {
+
+socket.on('sc_publishMessage', function (data) {
     var today = new Date();
     var month = today.getMonth() + 1 ;
     var year = today.getFullYear();
@@ -46,8 +48,18 @@ socket.on('event2', function (data) {
     var hour = today.getHours();
     var minute = today.getMinutes();
     var second = today.getSeconds();
-    $('#thread').prepend('<font color="#ffffff"><p>' + data +'<br />'+year + "/" + month + "/"+ date + "/" + getstringday(day)+'/'+hour+':'+minute+':'+second+ '</p>');
-    $('#message').val('');
+    var clientName = data.slice(0,data.indexOf(':'))
+    var clientmessage =data.slice(data.indexOf(':')+1)
+    if(clientName === userName)
+    {
+      $('#thread').prepend('<font color="#ef857d"><p>' + clientName +':<br />'+clientmessage+"<br />"+year + "/" + month + "/"+ date + "/" + getstringday(day)+'/'+hour+':'+minute+':'+second+ '</p>');
+      $('#message').val('');
+    }
+    else
+    {
+      $('#thread').prepend('<font color="#ffffff"><p>' +clientName +'さん:<br />'+clientmessage+'<br />'+year + "/" + month + "/"+ date + "/" + getstringday(day)+'/'+hour+':'+minute+':'+second+ '</p>');
+      $('#message').val('');
+    }
 });
 
 function getstringday(day)

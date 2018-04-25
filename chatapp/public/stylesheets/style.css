@@ -24,11 +24,9 @@ div.center {
  */
 .common-button {
   color:White;
-  font-weight:bold;
   text-decoration:none;
   text-align:center;
   padding:8px 0 10px;
-  color:#fff;
   background-color:#618e34;
 }
 
@@ -101,19 +99,41 @@ border-radius:2vw;
  * チャットルーム画面（room.hbs）に関する設定
  */
 #room{
-  background-color:#000000 ;
-}
+  background-color:#a7d28d;
+  width:90%;
 
+}
+.roomtitle{
+  font-size: 5vmin;
+  border-radius: 5vmin 0;
+  text-align: center;
+}
+.container2{
+  background-color: #242424;
+  width:100%;
+  height: 100%;
+}
+.row3{
+  height:15%
+}
+.row4{
+margin-left: 10%;
+margin-right: 10%;
+text-align: center;
+}
 .room-login_user {
+  color:White;
+  text-align: left;
 
  }
 
 .room-message {
-  color:#33FF33;
+  color:White;
 }
 
 .room-message_textarea {
-    width: 500px;
+  width: 100%;
+
 }
 
 .room-submit {
@@ -121,22 +141,220 @@ border-radius:2vw;
 }
 
 .room-publish_button {
-background-color: #33FF33;
-width: 250px;
+  font-size: 2vmin;
+width: 49%;
+border-radius: 2vmin;
 }
 
 .room-memo_button {
-  width: 250px;
+  width: 49%;
+  font-size: 2vmin;
+  border-radius: 2vmin;
+
 }
 
 .room-thread {
+  text-align: left;
+
 
 }
 
 .room-exit {
+  text-align: right;
 
 }
 
 .room-exit_button {
-  background-color: #33FF33;
+  width:20%;
+  margin-top: 1%;
+  margin-right: 1%;
+  font-size: 2vmin;
+  border-radius: 2vmin;
+
+}
+
+@media only screen and (max-device-width:600px)
+{
+  /*
+   * 画面全体に関する設定
+   */
+  body {
+      font: 5vmin "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
+      height: 100%;
+
+  }
+
+  a {
+      color:
+  }
+
+  div.center {
+      margin: 0 auto;
+  }
+
+
+
+
+
+  /*
+   * ボタンの共通設定
+   */
+  .common-button {
+    color:White;
+    text-decoration:none;
+    text-align:center;
+    padding:8px 0 10px;
+    background-color:#618e34;
+  }
+
+  /*
+   * トップ画面（index.hbs）に関する設定
+   */
+
+    #index {
+      text-align: center;
+      background-image: linear-gradient( -45deg, #242424 25%, #444444 25%, #444444 50%, #242424 50%, #242424 75%, #444444 75%, #444444 );
+      background-size: 30px 30px;
+      width:100%;
+      height: 100%;
+    }
+
+    html,body{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      background-color: #a7d28d;
+      width: 95%;
+      height: 100%;
+      min-height: 100%;
+    }
+
+  .index-user_name {
+    font-size :15vmin;
+    height: 10vmin;
+    width:70vmin;
+    margin-top:5%;
+  }
+
+  .title-design{
+    color: #fff;
+      font-size: 10vmax;
+      position: relative;
+      padding: 2% 10% 2% 10%;
+      margin:5% 10% 5% 10%;
+      border-radius: 10vmax 0;
+      background: #618e34;
+  }
+
+  .index-user_name_text {
+    font-size: 5vmin;
+
+
+  }
+
+  .index-enter {
+
+  }
+
+  .index-enter_button {
+  width :100%;
+  font-size: 7vmin;
+  border-radius:5vmin;
+  text-align: center;
+  margin-top:15%;
+
+  }
+  .row1{
+    margin-top: 20%;
+    height: 40%;
+
+  }
+  .row2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  /*
+   * チャットルーム画面（room.hbs）に関する設定
+   */
+  #room{
+    background-color:#a7d28d;
+    width:90%;
+
+  }
+  .roomtitle{
+    font-size: 8vmin;
+    border-radius: 8vmin 0;
+    text-align: center;
+  }
+  .container2{
+    background-color: #242424;
+    width:100%;
+    height: 100%;
+  }
+  .row3{
+    height:15%
+  }
+  .row4{
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  }
+  .room-login_user {
+    color:White;
+    text-align: left;
+
+   }
+
+  .room-message {
+    color:White;
+  }
+
+  .room-message_textarea {
+    width: 100%;
+
+  }
+
+  .room-submit {
+
+  }
+
+  .room-publish_button {
+    font-size: 5vmin;
+  width: 49%;
+  border-radius: 5vmin;
+  }
+
+  .room-memo_button {
+    width: 49%;
+    font-size: 5vmin;
+    border-radius: 5vmin;
+
+  }
+
+  .room-thread {
+    text-align: left;
+
+
+  }
+
+  .room-exit {
+    text-align: right;
+
+  }
+
+  .room-exit_button {
+    width:49%;
+    margin-top: 1%;
+
+    font-size: 5vmin;
+    border-radius: 5vmin;
+
+  }
+
 }

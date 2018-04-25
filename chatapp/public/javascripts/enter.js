@@ -10,8 +10,7 @@ socket.emit('enter1',userName +'さんが入室しました。');
 // サーバから受信した入室メッセージを画面上に表示する
 socket.on('enter2', function (data) {
   console.log('flug3s');
-    $('#thread').prepend('<font color="#ffffff"><p>'+ data + '</p></font>');
-    $('#thread').addClass('enter_color');
+    $('#thread').prepend('<font color="#ffff93"><p align="center">'+ data + '</p></font>');
 });
 /*
 socket.on('sc_addroomlist',function(data){
